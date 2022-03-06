@@ -2,7 +2,7 @@ package Baekjoon;
 
 import java.util.*;
 
-public class countNum {
+public class ArrayEx3 {
   public static void main(String[] args) {
     Scanner input = new Scanner(System.in);
 
