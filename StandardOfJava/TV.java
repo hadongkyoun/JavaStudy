@@ -17,11 +17,15 @@ class TV {
 
 class Tvtest{
   public static void main(String[] args) {
-    TV t;         // TV 인스턴스를 참조하기 위한 변수 t를 선언 
-    t = new TV(); //TV인스턴스 생성
-    t.channel = 7;
-    t.channelDown();
-    System.out.println("현재 채널은 "+t.channel+"입니다.");
-   
+    TV t1 = new TV();         
+    TV t2 = new TV();
+    System.out.println("t1의 채널 :" + t1.channel);
+    System.out.println("t2의 채널 :" + t2.channel);
+
+    t1.channel = 7;
+    System.out.println("t1의 채널 값을 "+ t1.channel+"로 변경");
+
+    System.out.println("t1의 채널 :" + t1.channel);
+    System.out.println("t2의 채널 :" + t2.channel);
   }
 }
