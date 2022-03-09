@@ -1,4 +1,4 @@
-package StandardOfJava;
+package TvTest;
 
 class TV {
 
@@ -17,15 +17,17 @@ class TV {
 
 class Tvtest{
   public static void main(String[] args) {
-    TV t1 = new TV();         
-    TV t2 = new TV();
-    System.out.println("t1의 채널 :" + t1.channel);
-    System.out.println("t2의 채널 :" + t2.channel);
+    TV[] tvArr = new TV[3];
+    //TV[] tvArr = { new TV(), new TV(), new TV() };
+    for(int i=0; i<tvArr.length; i++){
+      tvArr[i] = new TV();
+      tvArr[i].channel = i + 10;
+    }
 
-    t1.channel = 7;
-    System.out.println("t1의 채널 값을 "+ t1.channel+"로 변경");
-
-    System.out.println("t1의 채널 :" + t1.channel);
-    System.out.println("t2의 채널 :" + t2.channel);
+    for(int i=0; i < tvArr.length; i++){
+      tvArr[i].channelUp();
+      System.out.printf("tvArr[%d].channel=%d\n", i, tvArr[i].channel);
+    }
+    
   }
 }
