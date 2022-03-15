@@ -1,4 +1,4 @@
-package importantConcept;
+package basicConcept;
 
 // 형변환
 

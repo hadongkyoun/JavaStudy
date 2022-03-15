@@ -1,4 +1,4 @@
-package importantConcept;
+package basicConcept;
 import java.util.*;
 
 public class test2 {
