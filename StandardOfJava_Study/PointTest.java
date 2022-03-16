@@ -9,18 +9,18 @@ public class PointTest {
   }
 }
 
-class Point {
+class Point2 {
   int x = 10;
   int y = 20;
 
-  Point(int x, int y){
+  Point2(int x, int y){
     //super();
     this.x = x;
     this.y = y;
   }
 }
 
-class Point3D extends Point{
+class Point3D extends Point2{
   int z = 30;
 
   Point3D(){
