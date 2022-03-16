@@ -12,6 +12,8 @@ class Parent{
 }
 
 class Child extends Parent{
+  int x = 20;
+  
   void method(){
     System.out.println("x=" + x);
 
