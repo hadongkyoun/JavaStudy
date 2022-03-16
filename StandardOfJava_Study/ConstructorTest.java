@@ -21,5 +21,6 @@ class ConstructorTest {
     Data1 d0 = new Data1();
     Data2 d1 = new Data2(10);
     
+    System.out.printf("%d %d", d0.value, d1.value);
   }
 }

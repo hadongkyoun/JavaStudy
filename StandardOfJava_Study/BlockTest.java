@@ -1,12 +1,16 @@
 package StandardOfJava_Study;
 
 class BlockTest{
+  int x,y;
   static {
     //클래스 초기화 블럭
     System.out.println("static { }");
   }
+
   {
     //인스턴스 초기화 블럭
+    x = 10;
+    y = 20;
     System.out.println("{ }");
   }
   
@@ -20,5 +24,7 @@ class BlockTest{
 
     System.out.println("BlockTest bt2 = new BlockTest( );");
     BlockTest bt2 = new BlockTest();
+
+    System.out.printf("\n%d %d", bt.x , bt2.y);
   }
 }
