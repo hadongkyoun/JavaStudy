@@ -32,6 +32,8 @@ class LG_Computer extends Product{
 class Buyer{
   int money = 1000;
   int bonusPoint = 0;
+  Product[] item = new Product[10];
+  int i = 0;
 
   void buy(Product p){
     if(money < p.getPrice()){
@@ -40,6 +42,7 @@ class Buyer{
     }
     money -= p.getPrice();
     bonusPoint += p.getBonusPoint();
+    item[i++] = p;
     System.out.println(p+"을/를 구입 하셨습니다. (포인트 적립: " + bonusPoint + ")");
   }
 }
